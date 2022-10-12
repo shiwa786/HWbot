@@ -74,7 +74,7 @@ class Config(object):
     OWNER_ID=5497627952 #owner id in integer
     ERROR_LOGS=-1001747540803 #support group id
     BOT_NAME="elisa" #your bot name
-    ARQ_API_KEY="SLSFXSsdUXNSMH-ARQ" #ARQ api key from @ARQRobot
+    ARQ_API_KEY="USANBU-ERBKQO-CSKIFT-JDXIDT-ARQ" #ARQ api key from @ARQRobot
     ARQ_API_URL="arq.hamker.dev" #arq link
     SUPPORT_CHAT="elisha_support" #support group username without @
     OWNER_USERNAME="denvil_xdd" #owner username without @
