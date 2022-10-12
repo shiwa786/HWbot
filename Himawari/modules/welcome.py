@@ -282,7 +282,7 @@ def new_member(update: Update, context: CallbackContext):  # sourcery no-metrics
             # Welcome yourself
             elif new_mem.id == bot.id:
                 update.effective_message.reply_text(
-                    "Thanks for adding me! Checkout @ViciousAlliance for more.",
+                    "Thanks for adding me! Checkout @Elisha_support for more.",
                     reply_to_message_id=reply,
                 )
                 continue
