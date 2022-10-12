@@ -3,7 +3,7 @@ from cachetools import TTLCache
 from time import perf_counter
 
 from telegram import CallbackQuery, InlineKeyboardMarkup, InlineKeyboardButton, Update, Message
-from telegram.constants import ParseMode
+from telegram import ParseMode
 
 from Himawari import DEV_USERS, DEMONS, DEMONS, TIGERS
 
