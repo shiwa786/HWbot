@@ -85,6 +85,7 @@ class Config(object):
     TIME_API_KEY="QLLLDV7SWFD3" #not necessary
     SPAMWATCH_API="J968E_20LgxrKjsdN24cqYtD~gNRTbU" #spamwatch api token from @SpamWatchBot
     WALL_API="6950f5ds6a3" #wall api (not necessary)
+    BOT_ID = ""
 
 
 class Production(Config):
