@@ -3,15 +3,15 @@ from typing import Optional
 from threading import RLock
 
 from telegram import Chat, Update, ChatMember, InlineKeyboardButton, InlineKeyboardMarkup
-from telegram.constants import ParseMode
+from telegram import ParseMode
 from telegram.ext import CallbackContext as Ctx, CallbackQueryHandler as CBHandler
 
-from Hamawari import CUTIEPII_PTB
+from Hamawari import dispatcher
 
 from .admin_status_helpers import (
 	ADMINS_CACHE as A_CACHE,
 	BOT_ADMIN_CACHE as B_CACHE,
-	SUDO_USERS,
+	DRAGONS,
 	AdminPerms,
 	anon_callbacks as a_cb,
 	edit_anon_msg as eam,
@@ -152,7 +152,7 @@ def user_admin_check(permission: AdminPerms = None):
                 if (
                     getattr(mem, permission.value) is True
                     or mem.status == "creator"
-                    or user_id in SUDO_USERS
+                    or user_id in DRAGONS
                 ):
                     return func(update, context, *args, **kwargs)
                 else:
@@ -216,4 +216,4 @@ def perm_callback_check(upd: Update, _: Ctx):
 
     return cb[1](cb[0][0], cb[0][1])  # return func(update, context)
 
-CUTIEPII_PTB.add_handler(CBHandler(perm_callback_check, pattern = "anonCB"))
+dispatcher.add_handler(CBHandler(perm_callback_check, pattern = "anonCB"))
