@@ -11,11 +11,10 @@ from telegram.ext import CallbackContext as Ctx, CallbackQueryHandler as CBHandl
 
 from Himawari import dispatcher
 
-from .admin_status_helpers import (
+from .anonymous import (
 	ADMINS_CACHE as A_CACHE,
 	BOT_ADMIN_CACHE as B_CACHE,
-	SUDO_USERS,
-	MOD_USERS,
+	DRAGONS,
 	AdminPerms,
 	anon_reply_markup as arm,
 	anon_reply_text as art,
