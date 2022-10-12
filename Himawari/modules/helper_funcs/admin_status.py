@@ -15,6 +15,7 @@ from .admin_status_helpers import (
 	ADMINS_CACHE as A_CACHE,
 	BOT_ADMIN_CACHE as B_CACHE,
 	DRAGONS,
+        TIGERS,
 	AdminPerms,
 	anon_reply_markup as arm,
 	anon_reply_text as art,
@@ -91,7 +92,7 @@ def user_is_admin(update: Update,
 					) -> bool:
 	chat = update.effective_chat
 	message = update.effective_message
-	if chat.type == "private" or user_id in (MOD_USERS if allow_moderators else SUDO_USERS):
+	if chat.type == "private" or user_id in (TIGERS if allow_moderators else DRAGONS):
 		return True
 
 	if channels and (message.sender_chat is not None and message.sender_chat.type != "channel"):
