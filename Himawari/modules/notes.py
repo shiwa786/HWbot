@@ -32,7 +32,8 @@ from typing import Optional
 from Himawari import LOGGER, JOIN_LOGGER, SUPPORT_CHAT, dispatcher, DRAGONS
 from Himawari.modules.disable import DisableAbleCommandHandler
 from Himawari.modules.helper_funcs.handlers import MessageHandlerChecker
-from Himawari.modules.helper_funcs.chat_status import user_admin, connection_status, AdminPerms
+from Himawari.modules.helper_funcs.chat_status import user_admin, connection_status
+from Himawari.modules.helper_funcs.anonymous AdminPerms
 from Himawari.modules.helper_funcs.misc import build_keyboard, revert_buttons
 from Himawari.modules.helper_funcs.msg_types import get_note_type
 from Himawari.modules.helper_funcs.string_handling import (
