@@ -5,7 +5,7 @@ from time import perf_counter
 from telegram import CallbackQuery, InlineKeyboardMarkup, InlineKeyboardButton, Update, Message
 from telegram.constants import ParseMode
 
-from Cutiepii_Robot import DEV_USERS, SUDO_USERS, SUPPORT_USERS, WHITELIST_USERS
+from Himawari import DEV_USERS, DEMONS, DEMONS, TIGERS
 
 # stores admin in memory for 10 min.
 ADMINS_CACHE = TTLCache(maxsize = 512, ttl = (60 * 30), timer=perf_counter)
@@ -37,12 +37,10 @@ class ChatStatus(Enum):
 
 # class SuperUsers(Enum):
 # 	Owner = [OWNER_ID]
-# 	SysAdmin = [OWNER_ID, SYS_ADMIN]
 # 	Devs = DEV_USERS
-# 	Sudos = SUDO_USERS
-# 	Supports = SUPPORT_USERS
-# 	Whitelist = WHITELIST_USERS
-# 	Mods = MOD_USERS
+# 	Sudos = DRAGONS
+# 	Supports = DEMONS
+# 	Whitelist = TIGERS
 
 
 def anon_reply_markup(cb_id: str) -> InlineKeyboardMarkup:
