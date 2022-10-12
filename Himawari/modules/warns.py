@@ -65,7 +65,7 @@ from Himawari.modules.helper_funcs.extraction import (
 from Himawari.modules.helper_funcs.filters import CustomFilters
 from Himawari.modules.helper_funcs.misc import split_message
 from Himawari.modules.helper_funcs.string_handling import split_quotes
-from Hiwawari.modules.log_channel import loggable
+from Himawari.modules.log_channel import loggable
 from Himawari.modules.sql import warns_sql as sql
 
 WARN_HANDLER_GROUP = 9
