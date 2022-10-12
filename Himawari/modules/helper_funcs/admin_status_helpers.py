@@ -13,11 +13,11 @@ ADMINS_CACHE = TTLCache(maxsize = 512, ttl = (60 * 30), timer=perf_counter)
 # stores bot admin status in memory for 10 min.
 BOT_ADMIN_CACHE = TTLCache(maxsize = 512, ttl = (60 * 10), timer=perf_counter)
 
-SUDO_USERS = SUDO_USERS + DEV_USERS
+DRAGONS = DRAGONS + DEV_USERS
 
-WHITELIST_USERS = WHITELIST_USERS + SUDO_USERS
+DEMONS = DEMONS + DRAGONS
 
-SUPPORT_USERS = SUPPORT_USERS + SUDO_USERS
+TIGERS = TIGERS + DRAGONS
 
 
 class AdminPerms(Enum):
