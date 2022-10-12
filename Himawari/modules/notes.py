@@ -281,7 +281,7 @@ def slash_get(update: Update, context: CallbackContext):
         update.effective_message.reply_text("Wrong Note ID 😾")
 
 
-@user_admin(AdminPerms.CAN_CHANGE_INFO)
+@user_admin
 @connection_status
 def save(update: Update, context: CallbackContext):
     chat_id = update.effective_chat.id
@@ -320,7 +320,7 @@ def save(update: Update, context: CallbackContext):
         return
 
 
-@user_admin(AdminPerms.CAN_CHANGE_INFO)
+@user_admin
 @connection_status
 def clear(update: Update, context: CallbackContext):
     args = context.args
