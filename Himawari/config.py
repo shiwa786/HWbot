@@ -86,6 +86,9 @@ class Config(object):
     SPAMWATCH_API="J968E_20LgxrKjsdN24cqYtD~gNRTbU" #spamwatch api token from @SpamWatchBot
     WALL_API="6950f5ds6a3" #wall api (not necessary)
     BOT_ID = ""
+    HEROKU_APP_NAME = ""
+    HEROKU_API_KEY = ""
+ 
 
 
 class Production(Config):
