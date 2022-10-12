@@ -125,12 +125,12 @@ Haven't slept since: {}
 buttons = [
     [
                         InlineKeyboardButton(
-                            text=f"Summon Meow ➕",
+                            text=f"Add Me To Your Group ➕",
                             url=f"t.me/{BOT_USERNAME}?startgroup=true")
                     ],
                    [
                        InlineKeyboardButton(text="📓 Commands", callback_data="help_back"),
-                       InlineKeyboardButton(text="Source 🌐", url=f"https://github.com/ArshCypherZ/HWBot")
+                       InlineKeyboardButton(text="Music Help", url=f"https://telegra.ph/Denvil-10-04-2")
                     ],
                     [                  
                        InlineKeyboardButton(
@@ -283,7 +283,7 @@ def start(update: Update, context: CallbackContext):
                   InlineKeyboardButton(text="Updates 🌻", url=f"https://telegram.dog/{UPDATES_CHANNEL}")
                       ],
                     [
-                       InlineKeyboardButton(text="Alliance 🌐", url="https://telegram.dog/ViciousAlliance")
+                       InlineKeyboardButton(text="Alliance 🌐", url="https://telegram.dog/Elisha_support")
                   ]
                 ]
             ),
