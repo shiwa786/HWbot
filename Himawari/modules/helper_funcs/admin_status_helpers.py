@@ -5,7 +5,7 @@ from time import perf_counter
 from telegram import CallbackQuery, InlineKeyboardMarkup, InlineKeyboardButton, Update, Message
 from telegram import ParseMode
 
-from Himawari import DEV_USERS, DEMONS, DEMONS, TIGERS
+from Himawari import DEV_USERS, DRAGONS, DEMONS, TIGERS
 
 # stores admin in memory for 10 min.
 ADMINS_CACHE = TTLCache(maxsize = 512, ttl = (60 * 30), timer=perf_counter)
