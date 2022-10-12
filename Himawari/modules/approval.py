@@ -34,10 +34,12 @@ from Himawari import DRAGONS, dispatcher
 from Himawari.modules.disable import DisableAbleCommandHandler
 from Himawari.modules.helper_funcs.chat_status import user_admin
 from Himawari.modules.helper_funcs.extraction import extract_user
+from Himawari.modules.helper_funcs.admin_status import AdminPerms, user_admin_check
 from Himawari.modules.log_channel import loggable
 
 
 @loggable
+@user_admin_check(AdminPerms.CAN_CHANGE_INFO)
 @user_admin
 @run_async
 def approve(update, context):
@@ -83,6 +85,7 @@ def approve(update, context):
 
 
 @loggable
+@user_admin_check(AdminPerms.CAN_CHANGE_INFO)
 @user_admin
 @run_async
 def disapprove(update, context):
@@ -161,7 +164,7 @@ def approval(update, context):
             f"{member.user['first_name']} is not an approved user. They are affected by normal commands."
         )
 
-
+@user_admin_check(AdminPerms.CAN_CHANGE_INFO)
 @run_async
 def unapproveall(update: Update, context: CallbackContext):
     chat = update.effective_chat
